@@ -16,7 +16,7 @@ date = ''
 for fitsimage in range(len(imglist)): #Iterate over each image
     sortlist = [] #Re-empty sorting list
     sortdir = '' #Re-empty sorting string
-    namedir = ''
+    namedir = '' #Re-empty naming string
     hdulist = astropy.io.fits.open(basedir + '\\' + imglist[fitsimage]) #Open .fits image
     
     '''This part is important and where the meat of the sorting happens.

@@ -7,7 +7,7 @@ basedir = r'F:\CYG B\Cyg-X1' #Define base directory, must be nothing but .fits i
 
 imglist = os.listdir(basedir) #Create list of base directory files for numbers and iteration
 
-filterlist = ['TELESCOP','FILTERI1','FILTERI2','FILTERI3','FILTERI4','EXPTIME']
+filterlist = ['TELESCOP','FILTERI1','FILTERI2','FILTERI3','FILTERI4','EXPTIME'] #This is where you will insert the items from the .fits Header you want to filter for in file directories. Put them in order of directory as well.
 sortlist = [] #Empty sorting list
 sortdir = '' #Empty sorting string
 namedir = '' #Empty naming string

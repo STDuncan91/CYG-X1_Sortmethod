@@ -46,6 +46,10 @@ for fitsimage in range(len(imglist)): #Iterate over each image
     except:
         pass
     try:
+        sortlist.append(hdulist[0].header['EXPTIME'])
+    except:
+        pass
+    try:
         date = hdulist[0].header['DATE']
     except:
         pass
